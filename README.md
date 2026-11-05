@@ -2,7 +2,11 @@
 
 **Make AI output original instead of generic, while keeping it recognizable.**
 
-AI models converge on the same answers: the same names, the same purple-gradient login page, the same ideas. Asking for "more creative" barely helps. OffGeneric is an agent skill that pulls real seed material from outside sources on the web, mixes it into your request, and checks that the result still makes sense to a fresh reader.
+![Asked to pick a number between 1 and 30: without the skill the AI says 17; with /offgeneric it draws 22 from the system's random source and explains the habit](assets/number-test.png)
+
+Try it: ask any AI to pick a number between 1 and 30. It will likely say 17. Models fall into the same habits, and it's not just numbers: the same names, the same purple-gradient login page, the same ideas. Asking for "more creative" barely helps.
+
+OffGeneric is an agent skill that pulls real seed material from outside sources on the web, mixes it into your request, and checks that the result still makes sense to a fresh reader. It has no rule about numbers. It handled the test above with its one general principle: when the model's own habit is the problem, bring in material from outside.
 
 ## Install
 
@@ -41,7 +45,11 @@ The rule above all: **off-generic in style, never in meaning or function.**
 
 ## Before / after
 
-<!-- Add your comparison screenshots here -->
+| Prompt | Without | With OffGeneric |
+|---|---|---|
+| Pick a number between 1 and 30 | 17 | 22, drawn from the system's random source (see the image at the top) |
+
+<!-- More comparisons (names, login page) coming -->
 
 ## Requirements
 
