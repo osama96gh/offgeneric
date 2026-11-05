@@ -6,25 +6,21 @@ AI models converge on the same answers: the same names, the same purple-gradient
 
 ## Install
 
-**Any coding agent** (Claude Code, Codex, Cursor, Gemini CLI and many more):
+| Tool | Install | Update |
+|---|---|---|
+| **Claude Code** (recommended) | `/plugin marketplace add osama96gh/offgeneric`<br>`/plugin install offgeneric@offgeneric` | `/plugin update` |
+| **Codex, Cursor, Gemini CLI, Copilot** and other [Agent Skills](https://agentskills.io) tools | `npx skills add osama96gh/offgeneric -g` | `npx skills update offgeneric -g` |
+| **Codex** (built-in installer) | `$skill-installer install https://github.com/osama96gh/offgeneric/tree/main/skills/offgeneric` | Run it again |
+| **claude.ai / Claude app** | [Download `offgeneric.zip`](https://github.com/osama96gh/offgeneric/releases/latest/download/offgeneric.zip), then Customize → Skills → + → Upload a skill | Re-download and re-upload |
+| **OpenAI API** | Upload the `skills/offgeneric` folder or the zip as a skill | Upload again |
+| **ChatGPT / any other chat AI** | Paste [`SKILL.md`](skills/offgeneric/SKILL.md) into your custom or project instructions | Paste again |
+| **Manual** | Copy `skills/offgeneric` into your agent's skills folder (e.g. `~/.claude/skills/`) | Copy again |
 
-```bash
-npx skills add osama96gh/offgeneric
-```
-
-**Manual install**
-
-| Tool | Steps |
-|---|---|
-| Claude Code | Copy `skills/offgeneric` to `~/.claude/skills/offgeneric` |
-| Codex | Copy `skills/offgeneric` to `.agents/skills/offgeneric` in your project (check the Codex docs for the current path) |
-| claude.ai / Claude app | Download `offgeneric.zip` from [Releases](../../releases) and upload it under Skills |
-| OpenAI API | Upload the `skills/offgeneric` folder or the zip as a skill |
-| ChatGPT / any other chat AI | Paste the contents of [`SKILL.md`](skills/offgeneric/SKILL.md) into your custom instructions or project instructions |
+> Use one install method per machine. Claude Code doesn't remove duplicates, so the skill would appear twice.
 
 ## Use
 
-Just ask for something creative. The skill triggers on its own:
+In Claude Code, type `/offgeneric` followed by what you want, or just ask for something creative and the skill triggers on its own:
 
 > Suggest 5 names for my app that monitors support chats and alerts on spikes.
 

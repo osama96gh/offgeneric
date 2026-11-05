@@ -1,0 +1,25 @@
+{
+  "name": "offgeneric",
+  "metadata": {
+    "description": "Agent skill that makes AI output original instead of generic, while keeping it recognizable."
+  },
+  "owner": {
+    "name": "Osama Ghazal"
+  },
+  "plugins": [
+    {
+      "name": "offgeneric",
+      "description": "Makes AI output original instead of generic, while keeping it recognizable. Pulls real seed material from outside sources for names, slogans, visual style, UI and ideas.",
+      "version": "1.0.0",
+      "source": "./",
+      "skills": ["./skills/offgeneric"],
+      "author": {
+        "name": "Osama Ghazal"
+      },
+      "homepage": "https://github.com/osama96gh/offgeneric",
+      "repository": "https://github.com/osama96gh/offgeneric",
+      "license": "MIT",
+      "keywords": ["skills", "creativity", "naming", "design", "original"]
+    }
+  ]
+}
